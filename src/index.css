@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+  /* background-image: url('../public/images/background.png'); Absolute path from the public directory */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden; /* Prevent scrolling on the entire document */
+}
+/* For WebKit-based browsers */
+::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(36, 30, 30); /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners for the scrollbar thumb */
+}
+
+::-webkit-scrollbar-track {
+  background-color: black; /* Background color of the scrollbar track */
+}
+
+/* For Firefox */
+.scrollbar {
+  scrollbar-width: thin; /* Thickness of the scrollbar */
+  scrollbar-color: red green; /* Color of the scrollbar thumb and track */
+}
+.spanFirstWordStyle {
+  background: linear-gradient(50deg, #714dff, #9c83ff 31.28%, #2EA3FF 77.97%, #2EA3FF 95.64%);
+  -webkit-background-clip: text; /* Clip the gradient to the text */
+  -webkit-text-fill-color: transparent; /* Make the rest of the text transparent */
+  font-weight: bolder;
+  font-size: 29px;
+}
+.main-container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  overflow-y: auto; /* Allow vertical scrolling */
+
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Styles for desktop */
+.mainbanner {
+  position: relative;
+  overflow: hidden;
+}
+
+.bannerimgblock {
+  position: relative;
+}
+
+.bannercontent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.titlehome {
+  font-size: 3rem; /* Adjust as needed */
+}
+
+/* Styles for mobile */
+.MobileBanner {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .mainbanner {
+    height: auto;
+  }
+
+  .bannerimgblock {
+    height: auto;
+  }
+
+  .bannercontent {
+    position: static;
+    transform: none;
+  }
+
+  .titlehome {
+    font-size: 2rem; /* Adjust as needed */
+  }
+
+  .MobileBanner {
+    display: block;
+  }
+
+  .homepagemobile h1 {
+    font-size: 1.5rem; /* Adjust as needed */
+  }
+}
