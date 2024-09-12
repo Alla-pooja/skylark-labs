@@ -1,0 +1,47 @@
+.bannerContainerDemo {
+    position: relative;
+    overflow: hidden;
+    height: 100vh; /* Adjust height as needed */
+    background-color: black;
+  }
+  
+  .bannerContentDemo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 1;
+  }
+  
+  .contentBoxdemo {
+    max-width: 800px; /* Adjust as needed */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6); /* Black shadow for better visibility */
+    border-radius: 8px; /* Optional: Rounded corners */
+    margin: 0 auto;
+  }
+  
+  .titleDemo {
+    font-size: 2rem; /* Adjust font size as needed */
+    text-decoration: none;
+    color: white; /* Ensure text is visible */
+    display: inline-block;
+    position: relative;
+    padding: 10px;
+  }
+  
+  .secondTitleDemo {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .typingdemo {
+    font-size: 1.5rem; /* Adjust as needed */
+    color: white; /* Ensure text is visible */
+    margin-top: 10px;
+  }
+  

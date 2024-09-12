@@ -1,0 +1,320 @@
+/* General Styles for Containers */
+.content-below-capabbanner,
+.capsection {
+  background: #05000b;
+  color: #fff;
+  padding: 20px 0;
+}
+
+/* Responsive Styles for Main Container */
+.capcardContainer,
+.corecardContainer {
+  background: linear-gradient(to right, #4F1D5A, #4C1D5A, #3D205A, #142152, #2A2157);
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+  height: 33.5em;
+  width: 65%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 9;
+  /* box-shadow: 0 4px 8px rgba(73, 52, 52, 0.1); */
+  /* padding: 60px 0; */
+  margin: 0 auto;
+}
+
+/* Individual Card Styles */
+.capcard,
+.corecard,
+.capab-card {
+  background-color: rgba(217, 217, 217, 0.5);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+  height: 30%;
+  min-height: 100px;
+  width: 70%;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+/* Hover effect for cards */
+.capab-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Styles for Image Containers */
+.imageCapContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.imageCapBox {
+  max-width: 400px;
+  flex: 1;
+  text-align: center;
+}
+
+.imagecapBoxImg {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.capimage, .coreimage, .card-cap-image {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Title Styles */
+.Captitle, .coretitle, .unlocktitle {
+  text-align: center;
+  /* margin: 40px 0; */
+  color: white;
+  font-size: 1em;
+}
+
+/* Gradient Text Style */
+.spanFirstWordStyle {
+  background: linear-gradient(50deg, #3498DB 31.28%, #714DFF 77.97%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+.spancapFirstWordStyle {
+  background: linear-gradient(50deg, #3498DB 31.28%, #714DFF 77.97%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  font-size:1em;
+}
+.spancapFirstWordStyle {
+  background: linear-gradient(50deg, #3498DB 31.28%, #714DFF 77.97%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  font-size:1em;
+  display: flex;
+  padding-left: 19%;
+  padding-bottom: 2%;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+  .capcardContainer,
+  .corecardContainer {
+    height: 100%;
+  }
+
+  .capcard,
+  .corecard,
+  .capab-card {
+    width: 90%;
+    height: auto;
+  }
+
+  .Captitle,
+  .coretitle,
+  .unlocktitle {
+    font-size: 1.5em;
+    margin: 5px 0;
+  }
+  .image {
+    width: 100%;
+    height: auto;
+    padding-left: 10px;
+  }
+  
+  /* Adjust text size for mobile view */
+  h5 {
+    font-size: 1rem; /* Smaller font size on mobile */
+  }
+  
+  p {
+    font-size: 0.85rem; /* Smaller font size for paragraph */
+  }
+  .spancapFirstWordStyle {
+    font-size: 1px; /* Further adjust size for very small screens */
+    width:100%;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .capcard,
+  .corecard,
+  .capab-card {
+    flex-direction: column;
+    align-items: center;
+    /* padding: 15px; */
+  }
+  .capcardContainer,
+  .corecardContainer {
+    height: 100%;
+    width: 100%;
+  }
+  .spancapFirstWordStyle {
+    font-size: 2.7em; /* Further adjust size for very small screens */
+    width:100%;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .capimage, .coreimage, .card-cap-image {
+    width: 60px;
+    height: 80px;
+    margin-bottom: 5px;
+  }
+
+  .Captitle,
+  .coretitle
+  {
+    font-size: 0.9em;
+  }
+  .unlocktitle{
+    font-size: 1em;
+    padding-bottom: 10%;
+
+  }
+  .image {
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Adjust text size for mobile view */
+  h5 {
+    font-size: 1rem; /* Smaller font size on mobile */
+    line-height: 1.1em;
+  }
+  
+  p {
+    font-size: 0.85rem; /* Smaller font size for paragraph */
+  }
+}
+
+
+.h2{
+  font-size: 20px;
+}
+
+
+/* Card Container */
+.cocardContainer {
+  background: linear-gradient(to right, #4F1D5A, #4C1D5A, #3D205A, #142152, #2A2157); /* Gradient background */
+  backdrop-filter: blur(10px); /* Background blur effect */
+  overflow: hidden;
+  padding: 0;
+  height: 32.5em;
+  width: 75%;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  padding: 60px 0; /* Vertical padding */
+  margin: 0 auto; /* Center the container within its parent */
+  position: relative;
+  z-index: 9;
+}
+
+/* Card Styling */
+.cocard {
+  background-color: rgba(217, 217, 217, 0.5); /* Semi-transparent background */
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  height: 55%; /* Ensure full height */
+  min-height: 100px; /* Minimum height for cards */
+  width: 70%;
+  position: relative;
+  overflow: hidden;
+  margin-left: 9%;
+}
+
+/* Image Styling */
+.coimage {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Title Styling */
+.cotitle {
+  text-align: center;
+  margin: 40px 0;
+  color: white;
+  font-size: 2em;
+}
+
+
+.capsection {
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.unlocktitle {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.imageCapContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Add some space between images for desktop view */
+  flex-wrap: wrap; /* Allow wrapping of elements */
+}
+
+.imageCapBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+  width: calc(33.33% - 20px); /* Width for three items in one row, minus the gap */
+}
+
+.imagecapBoxImg {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Media query for mobile view */
+@media (max-width: 600px) {
+  .imageCapContainer {
+    flex-direction: column; /* Stacks the items vertically */
+    align-items: center;
+  }
+
+  .imageCapBox {
+    width: 100%; /* Make each item take full width */
+    margin-bottom: 10px; /* Adjust spacing between items */
+  }
+}

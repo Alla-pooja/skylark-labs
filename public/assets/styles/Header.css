@@ -1,0 +1,341 @@
+/* Style for the header */
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: relative;
+  z-index: 9999;
+  width: 100%;
+  box-sizing: border-box;
+  left: 0;
+  background: linear-gradient(to right, #000000, #0A050F, #1E053B, #160C23, #150529, #000000);
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+}
+
+/* Style for the body */
+.body {
+  font-weight: 400;
+  margin: 0;
+  overflow-x: hidden;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  border-top: 1px solid white;
+  background-color: #130E0E;
+}
+
+/* Style for the announcement bar */
+.announcement-bar {
+  text-align: center;
+  padding: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  background: #130E0E;
+  color: white;
+  border-bottom: 1px solid #d8c9bf;
+  z-index: 1000;
+  font-weight: 400;
+}
+
+.announcement-bar h3 {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.5;
+  background: transparent;
+}
+
+/* Style for navigation links */
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  position: relative;
+  margin: 0 20px;
+}
+
+.nav-link {
+  color: #fff;
+  font-size: 16px;
+  padding: 8px 12px;
+  font-family: 'Futura PT', sans-serif;
+  font-weight: 100;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Dropdown menu */
+.submenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+}
+
+.submenu-link {
+  color: #fff;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.submenu-link:hover {
+  background: #333;
+}
+
+/* Mobile menu styles */
+.menuMobile {
+  display: none;
+}
+
+.menuMobile.mobilemenu-open {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 130%;
+  height: 100%;
+  background: #000;
+  z-index: 1000;
+}
+
+.menuMobile .mobilemenuOuter {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 20px;
+  color: white;
+}
+
+.mobilemenuOuter .mobilesolution {
+  display: flex;
+  flex-direction: column;
+}
+
+.MobileNavMain {
+  margin: 10px 0;
+}
+
+.MobileNavMain a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* Icon to close the mobile menu */
+.close-icon {
+  cursor: pointer;
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+/* Adjust the position and appearance of the menu icon */
+.menu-icon {
+  font-size: 30%;
+}
+
+@media (min-width: 768px) {
+  .menuMobile {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .desktop-nav {
+    display: none;
+  }
+ 
+ 
+}
+
+.header-logo {
+  margin-left: 20px; /* Adjust this value as needed */
+}
+.header-logo img {
+  width: 180px; /* Adjust this width as needed */
+  max-width: 100%; /* Ensure the image scales correctly */
+}
+.usfcr-logo {
+  margin-left: 20px; /* Adjust this value as needed */
+}
+.usfcr-logo img {
+  width: 180px; /* Adjust this width as needed */
+  max-width: 50%; /* Ensure the image scales correctly */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* MainLayout.css */
+.main-layout {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #f4f4f4;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  overflow-y: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.content {
+  margin-left: 250px; /* Sidebar width */
+  padding: 20px;
+  width: calc(100% - 250px); /* Adjust for sidebar */
+  height: calc(100vh - 60px); /* Adjust for header height */
+  overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px;
+  }
+
+  .content {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+/* Sidebar.css */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px; /* Initially hidden */
+  width: 250px;
+  height: 100%;
+  background: #333;
+  color: white;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+  z-index: 1000;
+}
+
+
+.sidebar.open {
+  transform: translateX(0); /* Slide in when open */
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.links nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.links nav ul li {
+  padding: 15px;
+  border-bottom: 1px solid #444;
+}
+
+.links nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.links nav ul li a:hover {
+  text-decoration: underline;
+}
+
+
+/* Hide sidebar by default on larger screens */
+@media (min-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+}
+
+/* Show sidebar on mobile screens */
+@media (max-width: 767px) {
+  .sidebar {
+    display: block;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .sidebar {
+    width: 200px;
+  }
+
+  .content {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+/* Sidebar.css */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px; /* Initially hidden */
+  width: 250px;
+  height: 100%;
+  background: #333;
+  color: white;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+  z-index: 1000;
+}
+
+
+.sidebar.open {
+  transform: translateX(0); /* Slide in when open */
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.links nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.links nav ul li {
+  padding: 15px;
+  border-bottom: 1px solid #444;
+}
+
+.links nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.links nav ul li a:hover {
+  text-decoration: underline;
+}
+

@@ -1,0 +1,83 @@
+/* Base Styles for Desktop */
+.bannerCapContainerStyle {
+  position: relative;
+  overflow: hidden;
+  height: 100vh; /* Full screen height */
+  background: #080110;
+}
+
+.bannerCapContentStyle {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  z-index: 1000;
+}
+
+.contentcapBoxStyle {
+  max-width: 600px; /* Adjust as needed */
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6); /* Black shadow for better visibility */
+  border-radius: 8px; /* Optional: Rounded corners */
+  margin: 0 auto;
+}
+
+.titleCapStyle {
+  font-size: 2rem; /* Adjust font size as needed */
+  text-decoration: none;
+  color: white; /* Ensure text is visible */
+  display: inline-block;
+  position: relative;
+  padding: 10px;
+}
+
+.CapsecondTitle {
+  font-size: 1.5rem;
+  position: relative;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.CaptypingStyle {
+  font-size: 1.5rem; /* Adjust as needed */
+  color: white; /* Ensure text is visible */
+  margin-top: 10px;
+}
+
+/* Responsive Styles for Mobile */
+@media (max-width: 768px) {
+  .bannerCapContainerStyle{
+    height:30vh;
+  }
+  .bannerCapContentStyle {
+    top: auto;
+    bottom: 10%; /* Align content at the bottom on mobile */
+    left: 5%;
+    transform: none; /* Remove centering transform for mobile */
+    text-align: left; /* Align text to the left */
+  }
+
+  .contentcapBoxStyle {
+    max-width: 90%;
+    padding: 10px;
+    margin: 0; /* Remove auto margin to prevent horizontal overflow */
+  }
+
+  .titleCapStyle {
+    font-size: 1.5rem; /* Smaller font size for mobile */
+    padding: 5px;
+  }
+
+  .CapsecondTitle {
+    font-size: 0.9rem; /* Adjust font size for mobile */
+    margin-top: 5px;
+  }
+
+  .CaptypingStyle {
+    font-size: 1.2rem; /* Smaller font size for mobile */
+    margin-top: 5px;
+  }
+}

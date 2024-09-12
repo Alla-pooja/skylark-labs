@@ -1,0 +1,110 @@
+/* Styles for the card container */
+.complete-bannercard {
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.BannercardContainer {
+  padding: 0;
+  background-color: #000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 70%;
+  background: black;
+  margin-left: 50px;
+}
+
+/* Styles for the image block on the left */
+.BannerimageLeftBlock {
+  padding-right: 1px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 50px;
+}
+
+.BannerimageLeftBlock img {
+  width: 100%; /* Make the image responsive */
+  height: auto; /* Maintain the aspect ratio */
+  max-width: 100%; /* Ensure image does not overflow */
+}
+
+/* Styles for the right block of content */
+.BannerhomeRightBlock {
+  padding: 20px;
+}
+
+/* Styles for h2 elements */
+.Bannerh2Style {
+  margin-top: 0.4em;
+  font-size: 1.9em;
+  color: white;
+  text-align: justify;
+  margin: 0 auto;
+  padding-left: 1.9em;
+}
+
+/* Styles for paragraph elements */
+.BannerpStyle {
+  font-size: 20px;
+  line-height: 1.4; /* Adjust line-height for better spacing */
+  color: white;
+  max-width: 500px; /* Set a maximum width for desktop */
+  overflow-wrap: break-word;
+  text-align: justify;
+  margin: 0 auto;
+}
+
+/* Styles for the span with gradient text */
+.spanFirstWordStyle {
+  background: linear-gradient(50deg, #714dff, #9c83ff 31.28%, #2EA3FF 77.97%, #2EA3FF 95.64%);
+  -webkit-background-clip: text; /* Clip the gradient to the text */
+  -webkit-text-fill-color: transparent; /* Make the rest of the text transparent */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .BannercardContainer {
+    width: 90%; /* Adjust container width for tablet */
+    margin-left: 5%; /* Center the container */
+  }
+}
+
+@media (max-width: 480px) {
+  .BannerpStyle {
+    font-size: 16px; /* Smaller font size for mobile */
+    line-height: 1.4; /* Adjust line-height for better spacing */
+    color: white;
+    max-width: 300px; /* Set a maximum width for the paragraph */
+    overflow-wrap: break-word;
+    text-align: justify;
+    margin: 0 auto;
+  }
+  .BannerhomeRightBlock {
+    padding: 2px;
+  }
+  
+  /* Styles for h2 elements */
+  .Bannerh2Style {
+    margin-top: 0.2em;
+    margin-bottom: 0.4em;
+
+    font-size: 1.6em;
+    color: white;
+    text-align: justify;
+    padding-left:2.1em;
+  }
+  
+  .BannerimageLeftBlock {
+    margin-right: 0; /* Remove right margin for mobile */
+  }
+
+  .BannerimageLeftBlock img {
+    max-width: 100%; /* Make sure image fits within its container */
+    height: auto; /* Maintain aspect ratio */
+  }
+}

@@ -1,0 +1,46 @@
+.perform-banner-container {
+  position: relative;
+  overflow: hidden;
+  height: 50vh; /* Adjust height as needed */
+  background: #080110;
+}
+
+.performbannercontent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  z-index: 1;
+}
+
+.performcontentbox {
+  max-width: 800px; /* Adjust as needed */
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6); /* Black shadow for better visibility */
+  border-radius: 8px; /* Optional: Rounded corners */
+  margin: 0 auto;
+}
+
+.performtitlehome {
+  font-size: 2rem; /* Adjust font size as needed */
+  text-decoration: none;
+  color: white; /* Ensure text is visible */
+  display: inline-block;
+  position: relative;
+  padding: 10px;
+}
+
+.performtyping,
+.mobile-typing {
+  font-size: 1.5rem; /* Adjust as needed */
+  color: white; /* Ensure text is visible */
+  margin-top: 10px;
+}
+
+.performreact-player {
+  z-index: -1;
+  pointer-events: none;
+}

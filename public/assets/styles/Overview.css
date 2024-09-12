@@ -1,0 +1,93 @@
+
+.overview-content-below-banner {
+    background: #080110; /* Dark background color for the section */
+    padding: 60px 0; /* Padding around the content */
+  }
+  
+  /* Section containing product overview content */
+  .overview-productoverviewblock {
+    position: relative;
+    padding: 60px 0;
+    background: #080110; /* Ensure the background matches */
+  }
+  
+  /* Container for the content to keep it centered */
+  .overview-bcontainer {
+    max-width: 1200px; /* Maximum width of the container */
+    margin: 0 auto; /* Center-align the container */
+    padding: 0 20px; /* Padding on the sides */
+  }
+  
+  /* Flex container for the card content */
+  .overview-card-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* Styles for the left image block */
+  .overview-imageleft-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Make the image responsive */
+    max-width: 100%; /* Limit width to container size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional rounded corners */
+  }
+  
+  /* Styles for the feature image */
+  .feature-image {
+    width: 100%; /* Make the image responsive */
+    max-width: 100%; /* Limit width to container size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional rounded corners */
+  }
+  
+  /* Styles for the text block on the right */
+  .homeright-block {
+    padding: 0 20px; /* Padding on the sides */
+  }
+  
+  /* Title styling */
+  .h2-title {
+    font-size: 2em; /* Font size for the title */
+    color: white; /* White color for the title text */
+    margin-bottom: 20px; /* Space below the title */
+    padding-left: 2em;
+  }
+  
+  /* Gradient text styling for the first span in the title */
+  .span-first-word {
+    background: linear-gradient(50deg, #3498DB 31.28%, #714DFF 77.97%); /* Gradient color */
+    -webkit-background-clip: text; /* Clip the gradient to text */
+    -webkit-text-fill-color: transparent; /* Make text color transparent to show gradient */
+    font-weight: bold; /* Bold text */
+  }
+  
+  /* Paragraph text styling */
+  .p-text {
+    color: white; /* White text color */
+    font-size: 1.2em; /* Font size for paragraph text */
+    line-height: 1.6; /* Line height for readability */
+    width:100%;
+  }
+  
+  /* Optional: Responsive adjustments for various screen sizes */
+  @media (max-width: 768px) {
+    .card-content {
+      flex-direction: column; /* Stack image and text vertically on smaller screens */
+    }
+    .imageleft-block, .homeright-block {
+      width: 100%; /* Full width on smaller screens */
+    }
+  }
+  @media (max-width: 480px) {
+    .card-content {
+      flex-direction: column; /* Stack image and text vertically on smaller screens */
+    }
+    .imageleft-block, .homeright-block {
+      width: 100%; /* Full width on smaller screens */
+    }
+  }
